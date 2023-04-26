@@ -1,0 +1,337 @@
+@font-face {
+    font-family: "TTLakes";
+    src: url(./assets/Font/TTLakes-Regular.ttf);
+}
+
+@font-face {
+    font-family: "TTLakes Bold";
+    src: url(./assets/Font/TTLakes-Bold.ttf);
+}
+
+.container {
+    overflow-x: hidden;
+    position: relative;
+}
+
+body {
+    font-family: "TTLakes", Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+/* HEADER */
+
+.header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    margin: 0;
+}
+
+.header__nav {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__nav::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: -1em;
+    height: 32px;
+    width: 2px;
+    background-color: #EAEAEA;
+    border-radius: 1px;
+}
+
+.header__menu, .header__nav-wrapper nav label {
+    margin: 0 0.5em;
+}
+
+.header__repair button, .header__search button {
+    margin-top: 6px;
+    margin-bottom: auto;
+}
+
+.header__tel button, .header__chat button, .header__prof button, .header__menu button {
+    margin-top: 6px;
+    margin-bottom: auto;
+}
+
+.header__nav label h3 {
+    display: none;
+}
+
+.header__menu button, .header__contact label button, .header__nav label button {
+    background-color: #FF3E79;
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.header__menu button:hover,:focus, .header__nav label button:hover,:focus, .header__contact label button:hover,:focus {
+    border: 2px solid aqua;
+}
+
+.header__menu button {
+    background-image: url(./assets/icon_menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header__repair button {
+    background-image: url(./assets/icon_repair.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header__search button {
+    background-image: url(./assets/icon_search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header__tel button {
+    background-image: url(./assets/icon_tel.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header__chat button {
+    background-image: url(./assets/icon_chat.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header__prof button {
+    background-image: url(./assets/icon_prof.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header__contact {
+    display: none;
+}
+
+/* MAIN */
+
+.main {
+    background-color: #F8F8F8;
+    
+}
+
+.main h1 {
+    font-family: "TTLakes Bold";
+    padding: 0.25em;
+    padding-left: 0.5em;
+    position: relative;
+    font-weight: bold;
+}
+
+.main h1::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #41F6D7;
+    ;
+    border-radius: 8px;
+}
+
+/* NAV */
+
+.nav {
+    padding: 0 1em;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    height: 80px;
+}
+
+
+
+.nav::-webkit-scrollbar {
+    display: none;
+}
+
+.radio__input {
+    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.option {
+    color: #7E7E82;
+    font-size: 1rem;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+}
+
+.radio__border {
+    padding: 0.5em 1em;
+    border-radius: 7px;
+    border: 2px solid transparent;
+}
+
+.radio__input:checked + .radio__border {
+    background-color: #ffffff;
+    border: 2px solid #B8FFEC;
+}
+
+
+
+/* TEXT */
+
+.more-button button {
+    border: 2px solid transparent;
+}
+
+.more-button button:hover, .more-button button:focus {
+    border: 2px solid aqua;
+}
+
+.info {
+    padding-left: 1em;
+}
+
+
+.info {
+    height: 7em;
+    overflow: hidden;
+    margin-bottom: 1em;
+    color: #1B1C21;
+}
+
+.more-button__icon {
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/icon_more.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.more-button {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.more-button button {
+    color: #1B1C21;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.more-button button h3 {
+    font-family: "TTLakes", Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.more-button button:active {
+    text-decoration: underline;
+}
+
+
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (min-width:768px) {
+    .info {
+        height: 10em;
+    }
+    .content-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    .info-container {
+        width: 50%;
+    }
+    .image-container{
+        width: 50%;
+    }
+    .image-container img {
+        border-radius: 10px;
+    }
+    .header__menu {
+        position: relative;
+    }
+    .header__menu::after {
+        content: '';
+        position: absolute;
+        bottom: 60%;
+        left: 115%;
+        height: 32px;
+        width: 2px;
+        background-color: #EAEAEA;
+        border-radius: 1px;
+    }
+    .header__contact {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 0.5em;
+        margin-right: 1em;
+    }
+    .header__nav {
+        margin-left: 1em;
+    }
+    .header__nav::before {
+        content: '';
+        position: absolute;
+        top: 25%;
+        left: -1em;
+        height: 32px;
+        width: 2px;
+        background-color: #EAEAEA;
+        border-radius: 1px;
+    }
+    .header {
+        justify-content: space-between;
+    }
+    .header__nav-wrapper {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .nav {
+        flex-wrap: wrap;
+        overflow-x: auto;
+        height: 100px;
+    }
+    .info {
+        height: 12em;
+    }
+    .header__nav label {
+        display: flex;
+    }
+    .header__nav label h3 {
+        display: block;
+        margin-right: 0.5em;
+    }
+    .header__nav::before {
+        display: none;
+    }
+}

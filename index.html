@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Block 1.3</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div>
+                <label class="header__menu"><button type="button"></button></label>
+                <img src="./assets/icon_logo.svg" width="100" height="50" alt="CPS_logo">
+            </div>
+            <div class="header__nav-wrapper">
+                <nav class="header__contact">
+                    <label class="header__tel"><button type="button"></button></label>
+                    <label class="header__chat"><button type="button"></button></label>
+                    <label class="header__prof"><button type="button"></button></label>
+                </nav>
+                <nav class="header__nav">
+                    <label class="header__repair"><h3>Оставить заявку</h3><button type="button"></button></label>
+                    <label class="header__search"><h3>Статус ремонта</h3><button type="button"></button></label>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <h1>Услуги и сервисы</h1>
+            <nav class="nav">
+                <label class="radio option">
+                    <input checked class="radio__input" type="radio" name="services">
+                    <div class="radio__border">Ремонтируемые устройства</div>
+                </label>
+                <label class="radio option">
+                    <input class="radio__input" type="radio" name="services">
+                    <div class="radio__border">Дополнительные услуги</div>
+                </label>
+                <label class="radio option">
+                    <input class="radio__input" type="radio" name="services">
+                    <div class="radio__border">Цены на услуги</div>
+                </label>
+                <label class="radio option">
+                    <input class="radio__input" type="radio" name="services">
+                    <div class="radio__border">Адреса сервисных центров</div>
+                </label>
+                <label class="radio option">
+                    <input class="radio__input" type="radio" name="services">
+                    <div class="radio__border">Специальные цены</div>
+                </label>
+                <label class="radio option">
+                    <input class="radio__input" type="radio" name="services">
+                    <div class="radio__border">Отзывы</div>
+                </label>
+            </nav>
+            <div class="content-wrapper">
+                <div class="info-container">
+                    <article class="info">
+                        <p>
+                            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только 
+                            у нас вы можете отремонтировать свой ноутбук Dell 
+                            с официальной гарантией производителя.
+                        </p>
+                        <p>
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, 
+                            что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, 
+                            в свою очередь, советуют нас родным и близким.
+                        </p>
+                    </article>
+                    <label class="more-button"><div class="more-button__icon"></div><button type="button"><h3>Читать далее</h3></button></label>
+                </div>
+                <div class="image-container"><img src="./assets/IMG_CPS.png" alt="CPS"></div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
