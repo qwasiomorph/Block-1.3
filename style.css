@@ -8,6 +8,11 @@
     src: url(./assets/Font/TTLakes-Bold.ttf);
 }
 
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .container {
     overflow-x: hidden;
     overflow-y: hidden;
@@ -201,26 +206,25 @@ button {
 
 
 /* TEXT */
-
-.more-button button {
-    border: 2px solid transparent;
-}
-
-.more-button button:hover, .more-button button:focus {
-    border: 2px solid aqua;
-}
-
 .info {
     padding-left: 1em;
     padding-right: 1em;
-}
-
-
-.info {
+    margin-bottom: 0em;
     height: 7em;
     overflow: hidden;
-    margin-bottom: 1em;
     color: #1B1C21;
+}
+
+.more-button {
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 0 0.25em;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.more-button:hover, .more-button:focus {
+    border: 2px solid aqua;
 }
 
 .more-button__icon {
@@ -236,21 +240,24 @@ button {
     display: flex;
     justify-content: center;
     margin: 1em;
+    
 }
 
 .more-button button {
-    color: #1B1C21;
     font-size: 1rem;
     line-height: 1rem;
-}
-
-.more-button button h3 {
     font-family: "TTLakes", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: #1B1C21;
     padding: 0;
     margin: 0;
 }
 
-.more-button button:active {
+.more-button button:focus,:hover {
+    border: transparent;
+}
+
+.more-button:active > button {
     text-decoration: underline;
 }
 
@@ -327,7 +334,7 @@ button {
         height: 4em;
     }
     .info {
-        height: 12em;
+        height: fit-content;
     }
     .header {
         justify-content: end;
