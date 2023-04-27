@@ -52,7 +52,7 @@ button {
     border-radius: 1px;
 }
 
-.header__menu, .header__nav-wrapper nav label {
+.header__menu, .header__nav-wrapper nav div {
     margin: 0 0.5em;
 }
 
@@ -62,15 +62,15 @@ button {
 }
 
 .header__tel button, .header__chat button, .header__prof button, .header__menu button {
-    margin-top: 6px;
+    margin-top: 5px;
     margin-bottom: auto;
 }
 
-.header__nav label h3 {
+.header__nav div h3 {
     display: none;
 }
 
-.header__menu button, .header__contact label button, .header__nav label button {
+.header__menu button, .header__contact div button, .header__nav div button {
     background-color: #FF3E79;
     border: 2px solid #FF3E79;
     border-radius: 50%;
@@ -78,7 +78,7 @@ button {
     height: 50px;
 }
 
-.header__menu button:hover,:focus, .header__nav label button:hover,:focus, .header__contact label button:hover,:focus {
+.header__menu button:hover,:focus, .header__nav div button:hover,:focus, .header__contact div button:hover,:focus {
     border: 2px solid aqua;
 }
 
@@ -131,6 +131,7 @@ button {
 
 .main h1 {
     margin-top: 0;
+    margin-bottom: 0;
     font-family: "TTLakes Bold";
     padding: 0.25em;
     padding-left: 0.5em;
@@ -153,11 +154,10 @@ button {
 /* NAV */
 
 .nav {
-    padding: 0 1em;
+    padding: 1em 1em;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
-    height: 80px;
 }
 
 
@@ -184,6 +184,7 @@ button {
     flex: 0 0 auto;
     width: auto;
     max-width: 100%;
+    height: 3em;
 }
 
 .radio__border {
@@ -280,12 +281,13 @@ button {
     }
     .header__menu {
         position: relative;
+        margin-right: 2.5em;
     }
     .header__menu::after {
         content: '';
         position: absolute;
         bottom: 60%;
-        left: 115%;
+        right: -1.5em;
         height: 32px;
         width: 2px;
         background-color: #EAEAEA;
@@ -322,7 +324,7 @@ button {
     .nav {
         flex-wrap: wrap;
         overflow-x: auto;
-        height: 100px;
+        height: 4em;
     }
     .info {
         height: 12em;
@@ -334,10 +336,10 @@ button {
     .header__logo-wrapper {
         display: none;
     }
-    .header__nav label {
+    .header__nav div {
         display: flex;
     }
-    .header__nav label h3 {
+    .header__nav div h3 {
         display: block;
         margin-right: 0.5em;
     }
